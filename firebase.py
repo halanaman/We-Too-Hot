@@ -22,7 +22,5 @@ def get_receipt(rfid):
     userdata = db.child(rfid).get(user['idToken'])
     return userdata.val()
 
-def set_receipt(rfid,userdata)
+def set_receipt(rfid,userdata):
     db.child(rfid).set(userdata, user['idToken'])
-
-
