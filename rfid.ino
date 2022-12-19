@@ -43,19 +43,19 @@ void loop()
   content.toUpperCase();
   if (content.substring(1) == "F8 5C 1B 0D") //change here the UID of the card/cards that you want to give access
   {
-    Serial.println("Authorized access: Card");
+    Serial.println("Card");
     Serial.println();
     delay(3000);
   }
   else if (content.substring(1) == "B3 32 17 B7") //change here the UID of the card/cards that you want to give access
   {
-    Serial.println("Authorized access: Tag");
+    Serial.println("Tag");
     Serial.println();
     delay(3000);
   }
   else if (content.substring(1) == "04 96 57 EA DA 3B 80") //change here the UID of the card/cards that you want to give access
   {
-    Serial.println("Authorized access: Robin");
+    Serial.println("Robin");
     Serial.println();
     delay(3000);
   }
