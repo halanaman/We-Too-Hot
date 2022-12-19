@@ -61,7 +61,7 @@ void loop()
   }
  
  else   {
-    Serial.println(" Access denied");
+    Serial.println("Not Registered");
     delay(3000);
   }
 } 
