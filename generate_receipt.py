@@ -7,7 +7,16 @@ def receipt():
                        |                       
 """
 
-    items = {"Shampoo":9.9, "Canola Oil":7.5, "Thai Rice":12.1, "Meji Crackers":5.7}
+    items = {
+            "Shampoo":9.9, "Canola Oil":7.5, 
+            "Thai Rice":12.1, "Meji Crackers":5.7,
+            "Chocolate":2.95, "Chips":1.95,
+            "Soft Drink":2.05, "Coffee":4.95,
+            "Tea":3.95, "Chilli Sauce":6.8,
+            "Mask":19.9, "Milo Packets":14.8,
+            "Tissue":3.55, "Hand Soap":3.9,
+            "Toothpaste":6.9, "Milk":5.95
+            }
 
     keys = list(items.keys())
     random.shuffle(keys)
@@ -27,7 +36,7 @@ Your Total bill amount is Total: ${:.2f}""".format(total)
     
 def generate_receipt():
     receipts = []
-    for i in range(random.randint(1,5)):
+    for i in range(random.randint(1,20)):
         receipts.append(receipt())
     return receipts
 
