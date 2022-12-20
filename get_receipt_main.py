@@ -123,7 +123,6 @@ frame2 = Frame(window)
 frame2.pack(side=LEFT, anchor=N)
 frame_display = Frame(frame2)
 frame_display.pack()
-display()
 # ############################################################################################
 
 # Window 3: Event Description ################################################################
